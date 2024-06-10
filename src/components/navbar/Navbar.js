@@ -3,15 +3,25 @@ import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import {logo, logos} from "../../assets/index"
 import { navLinksdata } from '../../constants';
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
-        <img src={logo} alt="logo" />
+      <div style={{
+          width: '85px',  // Adjust width and height as needed
+          height: '85px',
+          borderRadius: '50%',  // Makes the div circular
+          overflow: 'hidden',  // Ensures the image stays within the circular shape
+           // Centers the div horizontally
+        }}>
+        <img src={logos} alt="logo" style={{
+             width: '100%',  // Makes sure the image takes up the entire space of the div
+             height: 'auto',  // Maintains aspect ratio
+             display: 'block',  // Ensures the image is block-level element
+          }}/>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">

@@ -11,31 +11,43 @@ const Experience = () => {
     >
       <div>
         <div className="flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+          {/* <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p> */}
           <h2 className="text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Sr. Software Engineer"
-            subTitle="Google Out Tech - (2017 - Present)"
-            result="USA"
-            des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
-          />
-          <ResumeCard
-            title="Web Developer & Trainer"
-            subTitle="Apple Developer Team - (2012 - 2016)"
-            result="MALAYSIA"
-            des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
-          />
-          <ResumeCard
-            title="Front-end Developer"
-            subTitle="Nike - (2020 - 2011)"
-            result="Oman"
-            des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          />
+        <ResumeCard
+           title="Intern Software Engineer"
+           subTitle="Fluid Intellect"
+           result="South Africa"
+           des="Worked on developing and maintaining software solutions, collaborating with senior engineers to learn and apply industry best practices."
+         />
+        <ResumeCard
+         title="Junior Software Engineer"
+         subTitle="Fluid Intellect"
+         result="South Africa"
+         des="Assisted in the development of web applications, improved system performance, and contributed to team projects with a focus on innovation."
+        />
+        <ResumeCard
+         title="Data Engineer"
+         subTitle="Fluid Intellect"
+         result="South Africa"
+         des="Designed and implemented data pipelines, optimized data storage solutions, and enabled data-driven decision-making to support business operations."
+       />
+        <ResumeCard
+         title="Devops Engineer"
+         subTitle="Fluid Intellect"
+         result="South Africa"
+         des="Designed and implemented data pipelines, optimized data storage solutions, and enabled data-driven decision-making to support business operations."
+       />
+       <ResumeCard
+         title="DevOps Engineer"
+         subTitle="Fluid Intellec"
+         result="South Africa"
+         des="Automated infrastructure deployment, managed CI/CD pipelines, and ensured system reliability and scalability through continuous monitoring and improvement."
+       />
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className="flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2001 - 2020</p>
           <h2 className="text-4xl font-bold">Trainer Experience</h2>
@@ -60,7 +72,7 @@ const Experience = () => {
             des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
           />
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };

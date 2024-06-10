@@ -1,42 +1,43 @@
 import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe} from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaMobile, FaGlobe, FaBrain } from "react-icons/fa";
+import { SiProgress, SiDatabricks } from "react-icons/si";
 
 // Features Data
 export const featuresData = [
   {
     id: 1,
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaGlobe />,
+    title: "Web Development",
+    des: "Building responsive and user-friendly websites with modern technologies.",
   },
   {
     id: 2,
     icon: <AiFillAppstore />,
     title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Creating high-performance mobile applications for iOS and Android platforms.",
   },
   {
     id: 3,
     icon: <SiProgress />,
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    title: "DevOps",
+    des: "Implementing CI/CD pipelines and automating deployments for seamless integration.",
   },
   {
     id: 4,
     icon: <FaMobile />,
     title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Developing scalable and efficient mobile solutions tailored to your needs.",
   },
   {
     id: 5,
-    icon: <SiAntdesign />,
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <SiDatabricks />,
+    title: "Big Data",
+    des: "Leveraging big data technologies to derive actionable insights from vast datasets.",
   },
   {
     id: 6,
-    icon: <FaGlobe />,
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    icon: <FaBrain />,
+    title: "Artificial Intelligence",
+    des: "Building intelligent systems and models to automate and enhance decision-making.",
   },
 ];
