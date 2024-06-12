@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import {logo, logos} from "../../assets/index"
 import { navLinksdata } from '../../constants';
+import { jlprofile } from '../../assets/index';
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
@@ -53,11 +54,12 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <img className="w-32" src={jlprofile} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                 a versatile professional software engineer and a data engineer. 
+                 I specialize in developing robust software solutions With a strong foundation in full-stack development and agile methodologies,
+                 I ensure seamless integration and continuous delivery of high-quality software. 
+                 a dedicated data engineer in creating and managing scalable data pipelines and infrastructure.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -86,13 +88,19 @@ const Navbar = () => {
                 </h2>
                 <div className="flex gap-4">
                   <span className="bannerIcon">
-                    <FaFacebookF />
+                      <a href='https://www.facebook.com/profile.php?id=100084219211637'>
+                       <FaFacebookF />
+                       </a>
+                      </span>
+                  <span className="bannerIcon">
+                     <a href='https://www.instagram.com/twite_technology/'>
+                      <FaInstagram />
+                     </a>
                   </span>
                   <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
+                    <a href='https://www.linkedin.com/in/jean-luc-twite-4974071a4/'>
                     <FaLinkedinIn />
+                   </a>
                   </span>
                 </div>
               </div>
